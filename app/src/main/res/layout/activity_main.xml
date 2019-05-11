@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_single_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xx.fiveSelect.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentRight="true"
+        android:onClick="buttonClick"
+        android:text="选择完成"/>
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/button"
+        android:text="颜色分类"/>
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvv"
+        android:columnWidth="80dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="auto_fit">
+
+    </GridView>
+
+
+
+</RelativeLayout>
